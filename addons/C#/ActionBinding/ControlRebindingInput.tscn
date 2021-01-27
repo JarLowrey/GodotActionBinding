@@ -1,0 +1,26 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://ActionBinding/ControlRebindingInput.cs" type="Script" id=1]
+
+[node name="RebindingInput" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -474.0
+margin_bottom = -560.0
+rect_min_size = Vector2( 550, 40 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_right = 275.0
+margin_bottom = 40.0
+
+[node name="Button" type="Button" parent="."]
+margin_left = 275.0
+margin_right = 550.0
+margin_bottom = 20.0
+__meta__ = {
+"_edit_use_anchors_": false
+}

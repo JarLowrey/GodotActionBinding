@@ -22,7 +22,6 @@ imgSrc/*
 *.png
 *.jpg
 *.jpeg
-*.gif
 #fonts
 *.ttf
 *.otf
