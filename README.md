@@ -18,3 +18,7 @@ This repo makes input/control/key/action rebinding a simple drag+drop into Godot
 6. IMPORTANT: This repo relies on the Newtonsoft.Json nuget package. If you are missing Newtonsoft.Json in your Godot project, install it via `dotnet add package Newtonsoft.Json --version 12.0.3`
 7. Run!
 8. Update `EventSimpleText(InputEvent e)` in ActionBindingMenu.cs to change the control's text output
+
+#### License
+
+MIT

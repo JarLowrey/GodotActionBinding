@@ -63,8 +63,8 @@ public class ActionBindingMenu : Node
 	}
 
 	public override void _UnhandledInput(InputEvent inputEvent){
-		var isKeyOrMouseInput = inputEvent is InputEventKey || inputEvent is InputEventMouseButton;
-		if(isRebinding && isKeyOrMouseInput)
+		var isValidInput = inputEvent is InputEventKey || inputEvent is InputEventMouseButton || inputEvent is InputEventJoypadButton || inputEvent is InputEventScreenTouch;
+		if(isRebinding && isValidInput)
 			DoRebind(inputEvent);
 	}
 	
@@ -124,6 +124,10 @@ public class ActionBindingMenu : Node
 	}
 
 	private void ResetBinding(){
+		isRebinding = false;
+		SetProcessUnhandledInput(false);
+		SetAllInputsClickable(null,true);
+
 		LoadControls(InitialBindings);
 		UpdateInputButtons();
 		SaveControls();
