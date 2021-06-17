@@ -8,6 +8,18 @@ To test, simply download and run in Godot
 
 This repo makes input/control/key/action rebinding a simple drag+drop into Godot C# projects (with some optional configuration). 
 
+### Features
+
+- Rebind actions to a new inputs
+- Mappings are saved to custom file automatically, no need to clutter your save files!
+- Reset Mappings to their defaults with a button click
+- Display the multiple default inputs on mapping button
+
+#### To Do
+
+- Enable rebinding to multiple inputs
+- Improve display/wording of gamepad inputs
+
 ### How to use
 
 1. Drag the ActionBinding folder into your project
